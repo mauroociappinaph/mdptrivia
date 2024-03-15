@@ -1,9 +1,10 @@
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
-
-export default {
-  plugins: [
-    tailwindcss,
-    autoprefixer,
+// Configuración de Tailwind CSS
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };

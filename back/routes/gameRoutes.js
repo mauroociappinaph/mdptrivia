@@ -15,5 +15,10 @@ router.use('/verdaderofalso', verdaderoFalsoRoutes);
 router.use('/trivia', triviaRoutes);
 
 
+// Agregar un console.log para la ruta base
+router.use('/', (req, res, next) => {
+    console.log('Se accedió a la ruta base de juegos');
+    next();
+});
 
 module.exports = router;

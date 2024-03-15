@@ -14,4 +14,10 @@ router.use('/questions', questionRoutes);
 // Rutas de juego
 router.use('/game', gameRoutes);
 
+
+router.use('/', (req, res, next) => {
+    console.log('Se accedió a la ruta base');
+    next();
+});
+
 module.exports = router;
